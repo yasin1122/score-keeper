@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto; /* Centers the card */
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1); /* Creates the shadow effect */
+    border-radius: 10px; /* Rounds the corners of the card */
+}
+
+
+#sportsPic {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-size: 48px;
+    text-align: center;
+    margin: 0; /* Reduce space above and below score display */
+}
+
+#instructions {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Wrap label and select in a flex container */
+#playingToContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+select {
+    margin-left: 10px; /* Space between label and select */
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Wrap buttons in a flex container */
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button:active {
+    background: #004085;
+}
+
+#reset {
+    background: #dc3545;
+}
+
+#reset:hover {
+    background: #c82333;
+}
+
+#reset:active {
+    background: #bd2130;
+}
+
+#p1Score, #p2Score {
+    transition: color 0.3s ease;
+}

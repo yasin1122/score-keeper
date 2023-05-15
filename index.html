@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Score Keeper</title>
+        <link rel="stylesheet" href="app.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <img id="sportsPic" src="sports.jpg" alt="various sports balls" />
+            <p>Score Keeper</p>
+            <h1><span id="p1Score">0</span> to <span id="p2Score">0</span></h1>
+            <p id="instructions">Use the buttons below to keep score.</p>
+            <div id="playingToContainer">
+                <label for="playingTo">Playing To</label>
+                <select name="playingTo" id="playingTo">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div id="buttonContainer">
+                <button id="p1Button">+1 Player One</button>
+                <button id="p2Button">+1 Player Two</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
